@@ -13,3 +13,110 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+.white{
+	background-color: #ffffff;
+}
+.banner {
+	padding-bottom: 10px;
+}
+.banner img{
+	width: 100%;
+}
+#menu-primary{
+    background-color: #e1242a;
+	color: #fff;
+}
+#menu-primary ul,
+#menu-primary li{
+	list-style: none;
+}
+#menu-primary a{
+	color: #fff;
+    text-decoration: none;
+}
+#menu-primary .menu{
+	display: block;
+}
+#menu-primary .menu,
+#menu-primary .menu .sub-menu{
+	margin: 0;
+	padding: 0;
+}
+#menu-primary .menu:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+#menu-primary .menu > li{
+	position: relative;
+}
+#menu-primary .menu > li > a{
+	color: #fff;
+    display: block;
+    padding: 10px 25px;
+    border-left: 1px solid #fff;
+}
+#menu-primary .menu li > a:hover{
+	background-color: #bb2c31;
+}
+#menu-primary .menu li:hover .sub-menu{
+	display: block;
+}
+.menu > li > .sub-menu{
+	display: none;
+	width: 150%;
+	position: absolute;
+    background-color: #e1242a;
+    border: 1px solid #fff;
+}
+.menu > li > .sub-menu > li > a{
+	display: block;
+    padding: 10px 25px;
+}
+.menu > li > .sub-menu > li:not(:last-child){
+	border-bottom: 1px solid #fff
+}
+#menu-primary .navbar{
+	margin-bottom: 0;
+}
+#menu-primary .navbar{
+	min-height: inherit;
+}
+#menu-primary .navbar-inverse{
+	background-color: inherit;
+    border-color: transparent;
+}
+#menu-primary .navbar-inverse .navbar-collapse{
+	border-color: #fff;
+	padding-right: 0;
+	padding-left: 0;
+}
+#menu-primary .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color: #be2c30;
+}
+#menu-primary .navbar-inverse .navbar-toggle{
+	border-color: #c12a2e;
+}
+@media only screen and (max-width: 767px){
+	#menu-primary .menu > li > a{
+		border-left: none;
+		border-bottom: 1px solid #eb6c70;
+	}
+	.menu > li > .sub-menu{
+		position: relative;
+		width: 100%;
+		border: none;
+		margin-left: 40px!important;
+		display: block;
+	}
+	.menu > li > .sub-menu > li{
+		border-bottom: 1px solid #eb6c70!important;
+	}
+	#menu-primary .menu > li{
+	    overflow: hidden;
+	}
+}
+section .content{
+	padding: 20px 28px;
+}
