@@ -20,5 +20,22 @@ add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 
-add_theme_support('post-formats', array('aside', 'video', 'image'));
+add_theme_support('post-formats', array('image'));
+
+function cutecarrot_widget_setup(){
+		$args = array(
+			'name'          => 'Sidebar',
+			'id'            => 'sidebar-1',
+			'description'   => 'Standard sidebar',
+			'class'         => 'custom',
+			'before_widget' => '<aside id="%1s" class="widget %2s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>'
+		);
+	
+		register_sidebar( $args );
+}
+add_action('widgets_init', 'cutecarrot_widget_setup');
+
 ?>

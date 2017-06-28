@@ -2,10 +2,9 @@
 
 <div class="row">
 	<div class="col-sm-9">
-		<?php if (have_posts()) : ?>
-			<?php while (have_posts()) : the_post(); ?>
-				<?php get_template_part('content', get_post_format()); ?>
-			<?php endwhile; ?>
+		<?php if (have_posts()) : the_post(); ?>
+			<h3><?php the_title(); ?></h3>
+			<p><?php the_content(); ?></p>
 		<?php endif ?>
 	</div>
 	<div class="col-sm-3">

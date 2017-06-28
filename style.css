@@ -23,9 +23,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .banner img{
 	width: 100%;
 }
+.text-conent img{
+	max-width: 100%;
+}
 #menu-primary{
     background-color: #e1242a;
 	color: #fff;
+	box-shadow: 0 0px 14px 1px #b8a9a9;
+    position: relative;
 }
 #menu-primary ul,
 #menu-primary li{
@@ -69,6 +74,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	position: absolute;
     background-color: #e1242a;
     border: 1px solid #fff;
+    z-index: 1;
 }
 .menu > li > .sub-menu > li > a{
 	display: block;
@@ -119,4 +125,69 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 section .content{
 	padding: 20px 28px;
+}
+section .top{
+	height: 10px;
+	background-image: url(img/hr.png);
+    margin-bottom: 20px;
+}
+.widgets-area aside{
+	border: 1px solid #c4262b;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.widgets-area aside h3{
+	background-color: #e1242a;
+    margin: 0;
+    padding: 10px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.widgets-area .textwidget{
+	padding: 10px;
+}
+.widgets-area .textwidget .support:before{
+	content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    background-image: url(img/hl.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.widgets-area .textwidget span{
+	color: #e1242a;
+	font-weight: 700;
+}
+.widgets-area .posts-in-sidebar ul,
+.widgets-area .posts-in-sidebar li{
+	list-style: none;
+}
+.widgets-area .posts-in-sidebar ul{
+	padding: 10px;
+	margin-bottom: 0;
+}
+.widgets-area .posts-in-sidebar ul li:not(:last-child){
+	margin-bottom: 20px;
+}
+.widgets-area .posts-in-sidebar ul li .pis-thumbnail{
+	float: left;
+    overflow: hidden;
+    width: 27%;
+    margin-right: 7px;
+}
+.widgets-area .posts-in-sidebar ul li .pis-thumbnail img{
+	width: 100%;
+    height: auto;
+}
+.widgets-area .posts-in-sidebar ul li p{
+	margin-bottom: 0;
+}
+.widgets-area .posts-in-sidebar ul li:after{
+	content: '';
+	display: block;
+	clear: both;
 }

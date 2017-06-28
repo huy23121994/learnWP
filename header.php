@@ -31,15 +31,13 @@
 			    </div>
 				<?php
 					if ( has_nav_menu( 'primary' ) ) :
-						$args = array(
+						wp_nav_menu(array(
 							'theme_location' => 'primary',
 							'container_class' => 'collapse navbar-collapse',
 							'container_id' => 'myNavbar',
 							'menu_class' => 'nav navbar-nav menu',
 							'fallback_cb' => 'wp_page_menu',
-						);
-					
-						wp_nav_menu( $args );
+						));
 					endif; 
 				?> 
 			</nav>
@@ -47,3 +45,4 @@
 	</div>
 	<section class="container">
 		<div class="white content">
+			<div class="top"></div>
