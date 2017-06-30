@@ -15,9 +15,7 @@
 	endif;
 ?>
 <body <?php body_class($carrot_classes); ?>>
-	<div class="banner white container-fluid text-center">
-		<img src="<?php header_image(); ?>">
-	</div>
+	<div class="banner white container-fluid text-center" style="background-image: url(<?php header_image(); ?>);"></div>
 	<div class="container-fluid" id="menu-primary">
 		<div class="container">
 			<nav class="navbar navbar-inverse">
@@ -27,7 +25,7 @@
 			        	<span class="icon-bar"></span>
 			        	<span class="icon-bar"></span> 
 			      	</button>
-			      <a class="navbar-brand visible-xs-block" href="/">Trang chủ</a>
+			      <a class="navbar-brand visible-xs-block" href="<?php echo get_site_url(); ?>"><i class="fa fa-home"></i> Trang chủ</a>
 			    </div>
 				<?php
 					if ( has_nav_menu( 'primary' ) ) :
@@ -45,4 +43,6 @@
 	</div>
 	<section class="container">
 		<div class="white content">
-			<div class="top"></div>
+			<?php if(!is_front_page()) :?>
+				<div class="top"></div>
+			<?php endif ?>

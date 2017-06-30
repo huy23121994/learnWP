@@ -18,7 +18,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	background-color: #ffffff;
 }
 .banner {
-	padding-bottom: 10px;
+    height: 120px;
+    background-size: 100%;
+    background-position: 0px;
+    background-repeat: no-repeat;
 }
 .banner img{
 	width: 100%;
@@ -70,7 +73,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .menu > li > .sub-menu{
 	display: none;
-	width: 150%;
+	width: 220px;
 	position: absolute;
     background-color: #e1242a;
     border: 1px solid #fff;
@@ -125,6 +128,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 section .content{
 	padding: 20px 28px;
+	min-height: calc(100vh - 302px);
 }
 section .top{
 	height: 10px;
@@ -190,4 +194,65 @@ section .top{
 	content: '';
 	display: block;
 	clear: both;
+}
+.media.post-item .media-left .media-heading{
+	display: none;
+}
+.media.post-item .media-body .media-heading{
+	display: block;
+}
+@media only screen and (max-width: 470px){
+	.media.post-item .media-left{
+		margin-bottom: 10px;
+	}
+	.media.post-item .media-body .media-heading{
+		display: none;
+	}
+	.media.post-item .media-left .media-heading{
+		display: block;
+	}
+	.media.post-item .media-left img{
+		width: 90%;
+		margin-bottom: 10px;
+		margin: 0 auto;
+	}
+	.media.post-item .media-body,
+	.media.post-item .media-left,
+	.media.post-item .media-right{
+		display: block;
+		width: 100%;
+	}
+}
+footer{
+	background-color: #e1242a;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	padding: 10px 0;
+}
+h1,h2,h3,h4,h5{
+	margin-top: 0;
+}
+.full-w{
+	width: 100%;
+}
+.post-item-home .wrapper .img{
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+}
+.post-item-home .wrapper h4{
+	margin-top: 10px;
+    height: 38px;
+}
+.post-item-home{
+	height: 350px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.m-t-30{
+	margin-top: 30px;
+}
+.slider{
+	margin-bottom: 20px;
 }
