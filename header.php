@@ -15,7 +15,7 @@
 	endif;
 ?>
 <body <?php body_class($carrot_classes); ?>>
-	<div class="banner white container-fluid text-center" style="background-image: url(<?php header_image(); ?>);"></div>
+	<div class="banner white container-fluid text-center hidden-xs" style="background-image: url(<?php header_image(); ?>);"></div>
 	<div class="container-fluid" id="menu-primary">
 		<div class="container">
 			<nav class="navbar navbar-inverse">

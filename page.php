@@ -23,7 +23,7 @@
 							<div class="img" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>); "></div>
 						</a>
 						<h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-						<?php the_content(); ?>
+						<?php the_content('Xem thêm ...'); ?>
 					</div>
 				</div>
 			<?php endwhile;
@@ -32,17 +32,17 @@
 
 <?php else : ?>
 
-<div class="row">
-	<div class="col-sm-9">
-		<?php if (have_posts()) : the_post(); ?>
-			<h3><?php the_title(); ?></h3>
-			<p><?php the_content(); ?></p>
-		<?php endif ?>
+	<div class="row">
+		<div class="col-sm-9">
+			<?php if (have_posts()) : the_post(); ?>
+				<h3 class="text-red"><?php the_title(); ?></h3>
+				<p><?php the_content(); ?></p>
+			<?php endif ?>
+		</div>
+		<div class="col-sm-3">
+			<?php get_sidebar(); ?>
+		</div>
 	</div>
-	<div class="col-sm-3">
-		<?php get_sidebar(); ?>
-	</div>
-</div>
 
 <?php endif ?>
 

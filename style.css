@@ -130,7 +130,7 @@ section .content{
 	padding: 20px 28px;
 	min-height: calc(100vh - 302px);
 }
-section .top{
+section>.top{
 	height: 10px;
 	background-image: url(img/hr.png);
     margin-bottom: 20px;
@@ -210,9 +210,10 @@ section .top{
 	}
 	.media.post-item .media-left .media-heading{
 		display: block;
+		margin-top: 15px;
 	}
 	.media.post-item .media-left img{
-		width: 90%;
+		width: 100%;
 		margin-bottom: 10px;
 		margin: 0 auto;
 	}
@@ -243,10 +244,10 @@ h1,h2,h3,h4,h5{
 }
 .post-item-home .wrapper h4{
 	margin-top: 10px;
-    height: 38px;
+    min-height: 38px;
 }
 .post-item-home{
-	height: 350px;
+	height: 380px;
     overflow: hidden;
     margin-bottom: 30px;
 }
@@ -255,4 +256,29 @@ h1,h2,h3,h4,h5{
 }
 .slider{
 	margin-bottom: 20px;
+}
+.post-content .hide-in-post{
+	display: none;
+}
+.post-content{
+	font-size: 130%;
+	color: #000;
+    word-break: break-word;
+}
+.post-content .title{
+	color: #e1242a;
+	font-weight: 700;
+}
+.bread-crumb{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.bread-crumb .current{
+	display: none;
+}
+.post-content a{
+	color: inherit;
+}
+.text-red{
+	color: #e1242a;
 }
